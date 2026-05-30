@@ -153,6 +153,7 @@ nav a:hover { color: var(--text); }
 .download-badge-text { text-align: left; }
 .download-badge-text small { display: block; color: var(--text2); font-size: 12px; }
 .download-badge-text strong { font-size: 16px; }
+.download-variants { display: flex; flex-direction: column; gap: 12px; align-items: center; }
 .download-info { margin-top: 16px; font-size: 13px; color: var(--text2); }
 
 footer {
@@ -204,38 +205,38 @@ footer a:hover { color: var(--text); }
 <section class="features" id="features">
   <div class="container">
     <h2>Возможности</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="card-icon">⚡</div>
-        <h3>WireGuard</h3>
-        <p>Современный, быстрый и безопасный VPN-протокол. Минимальное потребление батареи и максимальная скорость.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🤖</div>
-        <h3>Telegram бот</h3>
-        <p>Автоматическая выдача конфигов через бота. Оплата Telegram Stars — быстро и удобно.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📊</div>
-        <h3>Мониторинг</h3>
-        <p>Статистика трафика, время подключения, внешний IP и страна выхода — вся информация на главном экране.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎨</div>
-        <h3>Тёмная тема</h3>
-        <p>Современный Material You дизайн с анимациями, адаптивный и приятный глазу.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔒</div>
-        <h3>Шифрование</h3>
-        <p>WireGuard использует современные криптографические алгоритмы для защиты твоих данных.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📱</div>
-        <h3>Android 7+</h3>
-        <p>Поддержка устройств начиная с Android 7.0 (API 24). Оптимизировано для любых экранов.</p>
-      </div>
-    </div>
+     <div class="grid">
+       <div class="card">
+         <div class="card-icon">⚡</div>
+         <h3>WireGuard</h3>
+         <p>Современный, быстрый и безопасный VPN-протокол. Минимальное потребление батареи и максимальная скорость.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">🛡️</div>
+         <h3>Trojan</h3>
+         <p>Альтернативный протокол через WebSocket. Не требует WireGuard на сервере — работает через TUN + NAT. Бесплатно.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">🤖</div>
+         <h3>Telegram бот</h3>
+         <p>Автоматическая выдача конфигов через бота. WireGuard — платно (Stars), Trojan — бесплатно.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">📊</div>
+         <h3>Мониторинг</h3>
+         <p>Статистика трафика, время подключения, внешний IP и страна выхода — вся информация на главном экране.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">🎨</div>
+         <h3>Тёмная тема</h3>
+         <p>Современный Material You дизайн с анимациями, адаптивный и приятный глазу.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">📱</div>
+         <h3>Android 7+</h3>
+         <p>Поддержка устройств начиная с Android 7.0 (API 24). Оптимизировано для любых экранов.</p>
+       </div>
+     </div>
   </div>
 </section>
 
@@ -249,22 +250,26 @@ footer a:hover { color: var(--text); }
           Открой бота <a href="https://t.me/GetVpnCfgBot" target="_blank">@GetVpnCfgBot</a> в Telegram
         </div>
       </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <div class="step-text">Напиши команду <strong>/myconfig</strong> — бот пришлёт WireGuard конфиг</div>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <div class="step-text">Скопируй конфиг и открой приложение VPN Client</div>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-text">Нажми на шестерёнку ⚙️, вставь конфиг, сохрани</div>
-      </div>
-      <div class="step">
-        <div class="step-num">5</div>
-        <div class="step-text">Нажми на кнопку включения — ты в безопасной сети!</div>
-      </div>
+       <div class="step">
+         <div class="step-num">2</div>
+         <div class="step-text">
+           Выбери протокол:<br/>
+           • <strong>WireGuard</strong> — команда <strong>/myconfig</strong> в боте, скопируй конфиг<br/>
+           • <strong>Trojan</strong> — команда <strong>/trojan</strong> в боте, скопируй URL и пароль
+         </div>
+       </div>
+       <div class="step">
+         <div class="step-num">3</div>
+         <div class="step-text">Открой приложение VPN Client, настройки ⚙️, выбери протокол</div>
+       </div>
+       <div class="step">
+         <div class="step-num">4</div>
+         <div class="step-text">Вставь скопированное — приложение импортирует само</div>
+       </div>
+       <div class="step">
+         <div class="step-num">5</div>
+         <div class="step-text">Нажми на кнопку включения — ты в безопасной сети!</div>
+       </div>
     </div>
   </div>
 </section>
@@ -273,16 +278,35 @@ footer a:hover { color: var(--text); }
   <div class="container">
     <h2>Скачать приложение</h2>
     <p>Загрузи APK и установи на свой Android-смартфон</p>
-    <a href="https://github.com/pokalo/vpn-client-app/releases/download/v1.0.0-alpha/app-arm64-v8a-release.apk" class="download-badge">
-      <div class="download-badge-icon">📦</div>
-      <div class="download-badge-text">
-        <small>Скачать (arm64-v8a)</small>
-        <strong>VPN Client v1.0.0-alpha</strong>
-      </div>
-    </a>
-    <div class="download-info">
-      Требуется Android 7.0+ • APK 20 MB • WireGuard / Trojan
-    </div>
+     <div class="download-variants">
+       <a href="https://github.com/pokalo/vpn-client-app/releases/download/v1.0.0-alpha/app-arm64-v8a-release.apk" class="download-badge">
+         <div class="download-badge-icon">📱</div>
+         <div class="download-badge-text">
+           <small>Для современных телефонов</small>
+           <strong>arm64-v8a</strong>
+           <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Samsung Galaxy S10+, Pixel 4+, Xiaomi Mi 9+ и новее</small>
+         </div>
+       </a>
+       <a href="https://github.com/pokalo/vpn-client-app/releases/download/v1.0.0-alpha/app-armeabi-v7a-release.apk" class="download-badge">
+         <div class="download-badge-icon">📱</div>
+         <div class="download-badge-text">
+           <small>Для старых телефонов</small>
+           <strong>armeabi-v7a</strong>
+           <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Samsung Galaxy S6/S7, Xiaomi Redmi Note 4/5, LG G5 и старше</small>
+         </div>
+       </a>
+       <a href="https://github.com/pokalo/vpn-client-app/releases/download/v1.0.0-alpha/app-x86_64-release.apk" class="download-badge">
+         <div class="download-badge-icon">💻</div>
+         <div class="download-badge-text">
+           <small>Для эмуляторов и планшетов</small>
+           <strong>x86_64</strong>
+           <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Chromebook, Android эмуляторы, планшеты на Intel</small>
+         </div>
+       </a>
+     </div>
+     <div class="download-info">
+       Требуется Android 7.0+ • 17–22 MB • WireGuard / Trojan
+     </div>
   </div>
 </section>
 
