@@ -192,12 +192,11 @@ footer a:hover { color: var(--text); }
     <div class="hero-icon">🛡️</div>
     <h1>Обходи блокировки без слежки</h1>
     <p>
-       Бесплатный WireGuard VPN-клиент для Android с интеграцией Telegram-бота.
-       Твой трафик шифруется и уходит через надёжный сервер через WebSocket relay.
+        Бесплатный WireGuard VPN-клиент для Android с WebSocket relay.
+        Обходит блокировки через Cloudflare — не нужен бот, не нужны настройки.
     </p>
     <div class="hero-buttons">
       <a href="#download" class="btn btn-primary">Скачать APK</a>
-      <a href="https://t.me/GetVpnCfgBot" class="btn btn-outline" target="_blank">Telegram бот</a>
     </div>
   </div>
 </section>
@@ -205,74 +204,70 @@ footer a:hover { color: var(--text); }
 <section class="features" id="features">
   <div class="container">
     <h2>Возможности</h2>
-     <div class="grid">
-       <div class="card">
-         <div class="card-icon">⚡</div>
-         <h3>WireGuard</h3>
-         <p>Современный, быстрый и безопасный VPN-протокол. Минимальное потребление батареи и максимальная скорость.</p>
+       <div class="grid">
+         <div class="card">
+           <div class="card-icon">⚡</div>
+           <h3>WireGuard + Relay</h3>
+           <p>WireGuard шифрует трафик, WebSocket relay передаёт его через Cloudflare — так трафик не виден DPI и не блокируется.</p>
+         </div>
+         <div class="card">
+           <div class="card-icon">🌐</div>
+           <h3>Cloudflare прокси</h3>
+           <p>Сервер спрятан за Cloudflare (origin IP скрыт). Домен perforator.dpdns.org доступен из РФ, порт 80 не блокируется.</p>
+         </div>
+         <div class="card">
+           <div class="card-icon">🎯</div>
+           <h3>Бесплатный пробный</h3>
+           <p>Нажми «Активировать пробный период» в приложении — никаких ботов, регистраций и платежей для первого подключения.</p>
+         </div>
+         <div class="card">
+           <div class="card-icon">📊</div>
+           <h3>Мониторинг</h3>
+           <p>Статистика трафика, время подключения, внешний IP и страна выхода — вся информация на главном экране.</p>
+         </div>
+         <div class="card">
+           <div class="card-icon">🎨</div>
+           <h3>Тёмная тема</h3>
+           <p>Современный Material You дизайн с анимациями, адаптивный и приятный глазу.</p>
+         </div>
+         <div class="card">
+           <div class="card-icon">📱</div>
+           <h3>Android 7+</h3>
+           <p>Поддержка устройств начиная с Android 7.0 (API 24). Оптимизировано для любых экранов.</p>
+         </div>
        </div>
-       <div class="card">
-         <div class="card-icon">🛡️</div>
-         <h3>Trojan</h3>
-         <p>Альтернативный протокол через WebSocket. Не требует WireGuard на сервере — работает через TUN + NAT. Бесплатно.</p>
-       </div>
-       <div class="card">
-         <div class="card-icon">🤖</div>
-         <h3>Telegram бот</h3>
-         <p>Автоматическая выдача конфигов через бота. WireGuard — платно (Stars), Trojan — бесплатно.</p>
-       </div>
-       <div class="card">
-         <div class="card-icon">📊</div>
-         <h3>Мониторинг</h3>
-         <p>Статистика трафика, время подключения, внешний IP и страна выхода — вся информация на главном экране.</p>
-       </div>
-       <div class="card">
-         <div class="card-icon">🎨</div>
-         <h3>Тёмная тема</h3>
-         <p>Современный Material You дизайн с анимациями, адаптивный и приятный глазу.</p>
-       </div>
-       <div class="card">
-         <div class="card-icon">📱</div>
-         <h3>Android 7+</h3>
-         <p>Поддержка устройств начиная с Android 7.0 (API 24). Оптимизировано для любых экранов.</p>
-       </div>
-     </div>
   </div>
 </section>
 
 <section class="howto" id="howto">
-  <div class="container">
-    <h2>Как получить и подключиться</h2>
-    <div class="steps">
-      <div class="step">
-        <div class="step-num">1</div>
-        <div class="step-text">
-          Открой бота <a href="https://t.me/GetVpnCfgBot" target="_blank">@GetVpnCfgBot</a> в Telegram
-        </div>
-      </div>
+   <div class="container">
+     <h2>Как подключиться</h2>
+     <div class="steps">
        <div class="step">
-         <div class="step-num">2</div>
+         <div class="step-num">1</div>
          <div class="step-text">
-           Выбери протокол:<br/>
-           • <strong>WireGuard</strong> — команда <strong>/myconfig</strong> в боте, скопируй конфиг<br/>
-           • <strong>Trojan</strong> — команда <strong>/trojan</strong> в боте, скопируй URL и пароль
+           Скачай APK из раздела <a href="#download">Скачать</a> ниже
          </div>
        </div>
-       <div class="step">
-         <div class="step-num">3</div>
-         <div class="step-text">Открой приложение VPN Client, настройки ⚙️, выбери протокол</div>
-       </div>
-       <div class="step">
-         <div class="step-num">4</div>
-         <div class="step-text">Вставь скопированное — приложение импортирует само</div>
-       </div>
-       <div class="step">
-         <div class="step-num">5</div>
-         <div class="step-text">Нажми на кнопку включения — ты в безопасной сети!</div>
-       </div>
-    </div>
-  </div>
-</section>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">Установи приложение (разреши установку из неизвестных источников)</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">Открой приложение, нажми <strong>«Активировать пробный период»</strong></div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text">Приложение само получит конфиг и подключится</div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-text">Готово! Трафик защищён и обходит блокировки 🛡️</div>
+        </div>
+     </div>
+   </div>
+ </section>
 
 <section class="download" id="download">
   <div class="container">
@@ -304,7 +299,7 @@ footer a:hover { color: var(--text); }
 
 <footer>
   <div class="container">
-    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub (новый репозиторий)</a> &middot; <a href="https://t.me/GetVpnCfgBot" target="_blank">Telegram</a></p>
+    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub</a></p>
     <p style="margin-top:8px">&copy; 2026 VPN Client</p>
   </div>
 </footer>
