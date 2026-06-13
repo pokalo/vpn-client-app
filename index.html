@@ -192,8 +192,8 @@ footer a:hover { color: var(--text); }
     <div class="hero-icon">🛡️</div>
     <h1>Обходи блокировки без слежки</h1>
     <p>
-      Бесплатный WireGuard VPN-клиент для Android с интеграцией Telegram-бота.
-      Твой трафик шифруется и уходит через надёжный сервер.
+       Бесплатный WireGuard VPN-клиент для Android с интеграцией Telegram-бота.
+       Твой трафик шифруется и уходит через надёжный сервер через WebSocket relay.
     </p>
     <div class="hero-buttons">
       <a href="#download" class="btn btn-primary">Скачать APK</a>
@@ -278,25 +278,33 @@ footer a:hover { color: var(--text); }
   <div class="container">
     <h2>Скачать приложение</h2>
     <p>Загрузи APK и установи на свой Android-смартфон</p>
-     <div class="download-variants">
-         <a href="https://github.com/pokalo/vpn-client-app/releases/download/v1.3.0/app-release.apk" class="download-badge">
-          <div class="download-badge-icon">📱</div>
-          <div class="download-badge-text">
-            <small>Для всех устройств</small>
-            <strong>Универсальная сборка</strong>
-            <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Android 7+, arm64-v8a / armeabi-v7a</small>
-          </div>
-        </a>
+      <div class="download-variants">
+          <a href="https://github.com/pokalo/vpn-client4russia/releases/download/v1.7.0/app-release.apk" class="download-badge">
+           <div class="download-badge-icon">📱</div>
+           <div class="download-badge-text">
+             <small>Для всех устройств</small>
+             <strong>Универсальная сборка</strong>
+             <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Android 7+, 58 MB</small>
+           </div>
+         </a>
+          <a href="http://api.perforator.dpdns.org/download/app-release.apk" class="download-badge">
+           <div class="download-badge-icon">🌐</div>
+           <div class="download-badge-text">
+             <small>Зеркало (из РФ)</small>
+             <strong>Через Cloudflare</strong>
+             <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Обходит блокировки, порт 80</small>
+           </div>
+         </a>
      </div>
      <div class="download-info">
-       Требуется Android 7.0+ • 17–22 MB • WireGuard
+       Требуется Android 7.0+ • 58 MB • WireGuard + WebSocket relay
      </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub</a> &middot; <a href="https://t.me/GetVpnCfgBot" target="_blank">Telegram</a></p>
+    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub (новый репозиторий)</a> &middot; <a href="https://t.me/GetVpnCfgBot" target="_blank">Telegram</a></p>
     <p style="margin-top:8px">&copy; 2026 VPN Client</p>
   </div>
 </footer>
