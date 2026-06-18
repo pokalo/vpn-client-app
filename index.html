@@ -147,6 +147,8 @@ nav a:hover { color: var(--text); }
   text-decoration: none;
   color: var(--text);
   transition: border-color 0.2s;
+  width: 100%;
+  max-width: 420px;
 }
 .download-badge:hover { border-color: var(--primary); }
 .download-badge-icon { font-size: 28px; }
@@ -181,7 +183,7 @@ footer a:hover { color: var(--text); }
     <div class="logo">VPN <span>Client</span></div>
     <nav>
       <a href="#features">Возможности</a>
-      <a href="#howto">Как получить</a>
+      <a href="#howto">Как подключиться</a>
       <a href="#download">Скачать</a>
     </nav>
   </div>
@@ -192,11 +194,12 @@ footer a:hover { color: var(--text); }
     <div class="hero-icon">🛡️</div>
     <h1>Обходи блокировки без слежки</h1>
     <p>
-        Бесплатный WireGuard VPN-клиент для Android с WebSocket relay.
-        Обходит блокировки через Cloudflare — не нужен бот, не нужны настройки.
+      Бесплатный WireGuard VPN-клиент для Android. Трафик шифруется и проходит через
+      Cloudflare Tunnel — не нужен бот, не нужны платежи.
     </p>
     <div class="hero-buttons">
       <a href="#download" class="btn btn-primary">Скачать APK</a>
+      <a href="https://github.com/pokalo/vpn-client4russia" class="btn btn-outline" target="_blank">GitHub</a>
     </div>
   </div>
 </section>
@@ -204,106 +207,106 @@ footer a:hover { color: var(--text); }
 <section class="features" id="features">
   <div class="container">
     <h2>Возможности</h2>
-       <div class="grid">
-         <div class="card">
-           <div class="card-icon">⚡</div>
-           <h3>WireGuard + Relay</h3>
-           <p>WireGuard шифрует трафик, WebSocket relay передаёт его через Cloudflare — так трафик не виден DPI и не блокируется.</p>
-         </div>
-         <div class="card">
-           <div class="card-icon">🌐</div>
-           <h3>Cloudflare прокси</h3>
-           <p>Сервер спрятан за Cloudflare (origin IP скрыт). Домен perforator.dpdns.org доступен из РФ, порт 80 не блокируется.</p>
-         </div>
-         <div class="card">
-           <div class="card-icon">🎯</div>
-           <h3>Бесплатный пробный</h3>
-           <p>Нажми «Активировать пробный период» в приложении — никаких ботов, регистраций и платежей для первого подключения.</p>
-         </div>
-         <div class="card">
-           <div class="card-icon">📊</div>
-           <h3>Мониторинг</h3>
-           <p>Статистика трафика, время подключения, внешний IP и страна выхода — вся информация на главном экране.</p>
-         </div>
-         <div class="card">
-           <div class="card-icon">🎨</div>
-           <h3>Тёмная тема</h3>
-           <p>Современный Material You дизайн с анимациями, адаптивный и приятный глазу.</p>
-         </div>
-         <div class="card">
-           <div class="card-icon">📱</div>
-           <h3>Android 7+</h3>
-           <p>Поддержка устройств начиная с Android 7.0 (API 24). Оптимизировано для любых экранов.</p>
-         </div>
+     <div class="grid">
+       <div class="card">
+         <div class="card-icon">⚡</div>
+         <h3>WireGuard + Relay</h3>
+         <p>WireGuard шифрует трафик, WebSocket relay передаёт его через Cloudflare — трафик не виден DPI и не блокируется.</p>
        </div>
+       <div class="card">
+         <div class="card-icon">🌐</div>
+         <h3>Обход блокировок</h3>
+         <p>Сервер спрятан за Cloudflare (origin IP скрыт). Домен доступен из РФ, порт 80 не блокируется.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">🎯</div>
+         <h3>Бесплатный пробный</h3>
+         <p>Нажми «Активировать пробный период» в приложении — никаких ботов, регистраций и платежей.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">📊</div>
+         <h3>Мониторинг</h3>
+         <p>Статистика трафика, время подключения, внешний IP и страна выхода на главном экране.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">🎨</div>
+         <h3>Тёмная тема</h3>
+         <p>Современный Material You дизайн с анимациями, адаптивный и приятный глазу.</p>
+       </div>
+       <div class="card">
+         <div class="card-icon">📱</div>
+         <h3>Android 7+</h3>
+         <p>Поддержка устройств начиная с Android 7.0 (API 24). Оптимизировано для любых экранов.</p>
+       </div>
+     </div>
   </div>
 </section>
 
 <section class="howto" id="howto">
-   <div class="container">
-     <h2>Как подключиться</h2>
-     <div class="steps">
-       <div class="step">
-         <div class="step-num">1</div>
-         <div class="step-text">
-           Скачай APK из раздела <a href="#download">Скачать</a> ниже
-         </div>
-       </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <div class="step-text">Установи приложение (разреши установку из неизвестных источников)</div>
+  <div class="container">
+    <h2>Как подключиться</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text">
+          Скачай APK из раздела <a href="#download">Скачать</a>
         </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <div class="step-text">Открой приложение, нажми <strong>«Активировать пробный период»</strong></div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text">
+          Установи приложение (разреши установку из неизвестных источников)
         </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <div class="step-text">Приложение само получит конфиг и подключится</div>
-        </div>
-        <div class="step">
-          <div class="step-num">5</div>
-          <div class="step-text">Готово! Трафик защищён и обходит блокировки 🛡️</div>
-        </div>
-     </div>
-   </div>
- </section>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text">Открой приложение, нажми <strong>«Активировать пробный период»</strong></div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-text">Нажми на кнопку включения — готово! Трафик защищён и обходит блокировки</div>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;color:var(--text2);font-size:13px">
+      Копировать конфиг вручную не нужно — приложение получит его автоматически
+    </p>
+  </div>
+</section>
 
 <section class="download" id="download">
   <div class="container">
     <h2>Скачать приложение</h2>
-    <p>Загрузи APK и установи на свой Android-смартфон</p>
-      <div class="download-variants">
-          <a href="https://github.com/pokalo/vpn-client4russia/releases/download/v1.7.0/app-release.apk" class="download-badge">
-           <div class="download-badge-icon">📱</div>
-           <div class="download-badge-text">
-             <small>Для всех устройств</small>
-             <strong>Универсальная сборка</strong>
-             <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Android 7+, 58 MB</small>
-           </div>
-         </a>
-          <a href="http://api.perforator.dpdns.org/download/app-release.apk" class="download-badge">
-           <div class="download-badge-icon">🌐</div>
-           <div class="download-badge-text">
-             <small>Зеркало (из РФ)</small>
-             <strong>Через Cloudflare</strong>
-             <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Обходит блокировки, порт 80</small>
-           </div>
-         </a>
+    <p>Загрузи APK и установи на свой Android</p>
+     <div class="download-variants">
+       <a href="https://github.com/pokalo/vpn-client4russia/releases/download/v1.8.5/vpn-client-v1.8.5.apk" class="download-badge">
+         <div class="download-badge-icon">📱</div>
+         <div class="download-badge-text">
+           <small>v1.8.5 • Для всех устройств</small>
+           <strong>ARM64 (основная сборка)</strong>
+           <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Android 7+, arm64-v8a</small>
+         </div>
+       </a>
+       <a href="https://api.perforator.dpdns.org/api/v1/apk/download" class="download-badge">
+         <div class="download-badge-icon">🌐</div>
+         <div class="download-badge-text">
+           <small>Зеркало (из РФ)</small>
+           <strong>Через Cloudflare</strong>
+           <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Обходит блокировки, порт 80</small>
+         </div>
+       </a>
      </div>
      <div class="download-info">
-       Требуется Android 7.0+ • 58 MB • WireGuard + WebSocket relay
+       Требуется Android 7.0+ (API 24) • ~28 MB • WireGuard + WebSocket relay
      </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub</a></p>
+    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub</a> &middot; Версия v1.8.5</p>
     <p style="margin-top:8px">&copy; 2026 VPN Client</p>
   </div>
 </footer>
 
 </body>
 </html>
-
