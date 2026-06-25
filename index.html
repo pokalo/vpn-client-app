@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>VPN Client — обход блокировок</title>
+<title>VPN Smart Client — безопасный интернет</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>" />
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -147,8 +147,6 @@ nav a:hover { color: var(--text); }
   text-decoration: none;
   color: var(--text);
   transition: border-color 0.2s;
-  width: 100%;
-  max-width: 420px;
 }
 .download-badge:hover { border-color: var(--primary); }
 .download-badge-icon { font-size: 28px; }
@@ -180,7 +178,7 @@ footer a:hover { color: var(--text); }
 
 <header>
   <div class="container">
-    <div class="logo">VPN <span>Client</span></div>
+    <div class="logo">VPN <span>Smart Client</span></div>
     <nav>
       <a href="#features">Возможности</a>
       <a href="#howto">Как подключиться</a>
@@ -192,10 +190,10 @@ footer a:hover { color: var(--text); }
 <section class="hero">
   <div class="container">
     <div class="hero-icon">🛡️</div>
-    <h1>Обходи блокировки без слежки</h1>
+    <h1>Безопасный и надёжный VPN</h1>
     <p>
-      Бесплатный WireGuard VPN-клиент для Android. Трафик шифруется и проходит через
-      Cloudflare Tunnel — не нужен бот, не нужны платежи.
+      VPN-клиент для Android с шифрованием трафика через WireGuard и Cloudflare Tunnel.
+      Защита данных в публичных сетях, безопасный удалённый доступ.
     </p>
     <div class="hero-buttons">
       <a href="#download" class="btn btn-primary">Скачать APK</a>
@@ -210,14 +208,14 @@ footer a:hover { color: var(--text); }
      <div class="grid">
        <div class="card">
          <div class="card-icon">⚡</div>
-         <h3>WireGuard + Relay</h3>
-         <p>WireGuard шифрует трафик, WebSocket relay передаёт его через Cloudflare — трафик не виден DPI и не блокируется.</p>
+          <h3>WireGuard + Relay</h3>
+          <p>WireGuard шифрует трафик, WebSocket relay передаёт его через Cloudflare — надёжное и стабильное соединение.</p>
        </div>
-       <div class="card">
-         <div class="card-icon">🌐</div>
-         <h3>Обход блокировок</h3>
-         <p>Сервер спрятан за Cloudflare (origin IP скрыт). Домен доступен из РФ, порт 80 не блокируется.</p>
-       </div>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Стабильное подключение</h3>
+          <p>Серверная инфраструктура на Cloudflare обеспечивает высокую доступность и низкую задержку.</p>
+        </div>
        <div class="card">
          <div class="card-icon">🎯</div>
          <h3>Бесплатный пробный</h3>
@@ -264,7 +262,7 @@ footer a:hover { color: var(--text); }
       </div>
       <div class="step">
         <div class="step-num">4</div>
-        <div class="step-text">Нажми на кнопку включения — готово! Трафик защищён и обходит блокировки</div>
+        <div class="step-text">Нажми на кнопку включения — готово! Трафик защищён и подключение активно</div>
       </div>
     </div>
     <p style="text-align:center;margin-top:24px;color:var(--text2);font-size:13px">
@@ -281,30 +279,30 @@ footer a:hover { color: var(--text); }
         <a href="https://api.perforator.dpdns.org/api/v1/apk/download" class="download-badge">
           <div class="download-badge-icon">📱</div>
           <div class="download-badge-text">
-            <small>v1.8.9 • Для всех устройств</small>
+            <small>v1.9.9 • Для всех устройств</small>
             <strong>Скачать APK (через Cloudflare)</strong>
-            <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Android 7+ • 58 MB • WireGuard + WebSocket relay</small>
+            <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Android 7+ • 58 MB • WireGuard + Cloudflare</small>
           </div>
         </a>
-        <a href="https://github.com/pokalo/vpn-client-app/releases/download/v1.8.9/VPN-Client-v1.8.9.apk" class="download-badge">
+        <a href="https://api.perforator.dpdns.org/api/v1/apk/download" class="download-badge">
           <div class="download-badge-icon">🐙</div>
           <div class="download-badge-text">
-            <small>v1.8.9 • Зеркало</small>
-            <strong>GitHub Releases</strong>
-            <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Резервная ссылка, без ограничений</small>
+            <small>v1.9.9 • Зеркало</small>
+            <strong>Прямая ссылка на APK</strong>
+            <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Резервная ссылка</small>
           </div>
         </a>
      </div>
      <div class="download-info">
-       Требуется Android 7.0+ (API 24) • ~58 MB • WireGuard + WebSocket relay
+        Требуется Android 7.0+ (API 24) • ~58 MB • WireGuard + Cloudflare
      </div>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub</a> &middot; Версия v1.8.9</p>
-    <p style="margin-top:8px">&copy; 2026 VPN Client</p>
+    <p><a href="https://github.com/pokalo/vpn-client4russia" target="_blank">GitHub</a> &middot; Версия v1.9.9</p>
+    <p style="margin-top:8px">&copy; 2026 VPN Smart Client</p>
   </div>
 </footer>
 
