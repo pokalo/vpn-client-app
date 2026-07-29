@@ -166,6 +166,36 @@ footer {
 footer a { color: var(--text2); text-decoration: none; }
 footer a:hover { color: var(--text); }
 
+.donate {
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  text-align: center;
+}
+.donate h2 { font-size: 28px; margin-bottom: 16px; }
+.donate p { color: var(--text2); margin-bottom: 32px; }
+.donate-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.donate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 500;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.donate-btn:hover { border-color: var(--accent); transform: translateY(-2px); }
+.donate-icon { font-size: 22px; }
+
 @media (max-width: 600px) {
   .hero h1 { font-size: 28px; }
   .hero { padding: 60px 0 40px; }
@@ -183,6 +213,7 @@ footer a:hover { color: var(--text); }
       <a href="#features">Возможности</a>
       <a href="#howto">Как подключиться</a>
       <a href="#download">Скачать</a>
+      <a href="#donate">Донат</a>
     </nav>
   </div>
 </header>
@@ -303,6 +334,19 @@ footer a:hover { color: var(--text); }
       <div class="download-info">
          Android 7.0+ (API 24). Протестировано на Android 7.1 и Android 12.
      </div>
+  </div>
+</section>
+
+<section class="donate" id="donate">
+  <div class="container">
+    <h2>Поддержать разработку</h2>
+    <p>Если приложение тебе помогло, поддержи проект любой суммой</p>
+    <div class="donate-links">
+      <a href="https://boosty.to/maincraftportal/donate" class="donate-btn" target="_blank"><span class="donate-icon">🚀</span> Boosty</a>
+      <a href="https://yoomoney.ru/to/4100117861836659" class="donate-btn" target="_blank"><span class="donate-icon">💳</span> ЮMoney</a>
+      <a href="https://web.tribute.tg/d/NRg" class="donate-btn" target="_blank"><span class="donate-icon">✈️</span> Tribute</a>
+      <a href="https://vk.com/donut/club240500556" class="donate-btn" target="_blank"><span class="donate-icon">💜</span> VK Donut</a>
+    </div>
   </div>
 </section>
 
