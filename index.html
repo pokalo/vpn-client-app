@@ -196,6 +196,13 @@ footer a:hover { color: var(--text); }
 .donate-btn:hover { border-color: var(--accent); transform: translateY(-2px); }
 .donate-icon { font-size: 22px; }
 
+.ios {
+  padding: 80px 0;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+.ios h2 { text-align: center; font-size: 28px; margin-bottom: 16px; }
+.ios p { text-align: center; color: var(--text2); margin-bottom: 32px; }
+
 @media (max-width: 600px) {
   .hero h1 { font-size: 28px; }
   .hero { padding: 60px 0 40px; }
@@ -212,6 +219,7 @@ footer a:hover { color: var(--text); }
     <nav>
       <a href="#features">Возможности</a>
       <a href="#howto">Как подключиться</a>
+      <a href="#ios">iPhone</a>
       <a href="#download">Скачать</a>
       <a href="#donate">Донат</a>
     </nav>
@@ -298,6 +306,34 @@ footer a:hover { color: var(--text); }
     <p style="text-align:center;margin-top:24px;color:var(--text2);font-size:13px">
       Копировать конфиг вручную не нужно — приложение получит его автоматически
     </p>
+  </div>
+</section>
+
+<section class="ios" id="ios">
+  <div class="container">
+    <h2>iPhone / iPad</h2>
+    <p>Используй встроенный VPN клиент iOS (IKEv2) — без сторонних приложений</p>
+    <div class="download-variants">
+      <a href="ios/VPN_Smart_Client.mobileconfig" class="download-badge">
+        <div class="download-badge-icon">🍎</div>
+        <div class="download-badge-text">
+          <small>Автоконфиг</small>
+          <strong>VPN_Smart_Client.mobileconfig</strong>
+          <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Открой в Safari → Установить профиль → Включить VPN</small>
+        </div>
+      </a>
+      <a href="ios/IKEv2-инструкция-iphone.md" class="download-badge">
+        <div class="download-badge-icon">📄</div>
+        <div class="download-badge-text">
+          <small>Шаг за шагом</small>
+          <strong>Инструкция по подключению</strong>
+          <small style="display:block;color:var(--text2);font-size:11px;margin-top:2px">Ручная настройка IKEv2, если профиль не ставится</small>
+        </div>
+      </a>
+    </div>
+    <div class="download-info">
+      Сервер: 69.12.73.250 • IKEv2 (UDP 500/4500) • Работает в РФ
+    </div>
   </div>
 </section>
 

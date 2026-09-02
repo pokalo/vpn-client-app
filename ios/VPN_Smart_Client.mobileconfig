@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadContent</key>
+			<data>
+			DQotLS0tLUJFR0lOIENFUlRJRklDQVRFLS0tLS0KTUlJQnFqQ0NB
+			VkNnQXdJQkFnSUlTeFJwUEtkWW1DUXdDZ1lJS29aSXpqMEVBd0l3
+			T1RFY01Cb0dBMVVFQXhNVApWbEJPSUZOdFlYSjBJRU5zYVdWdWRD
+			QkRRVEVaTUJjR0ExVUVDaE1RVmxCT0lGTnRZWEowSUVOc2FXVnVk
+			REFlCkZ3MHlOakE1TURJd05ERTVOVEZhRncwek5qQTRNekF3TkRF
+			NU5URmFNRGt4SERBYUJnTlZCQU1URTFaUVRpQlQKYldGeWRDQkRi
+			R2xsYm5RZ1EwRXhHVEFYQmdOVkJBb1RFRlpRVGlCVGJXRnlkQ0JE
+			YkdsbGJuUXdXVEFUQmdjcQpoa2pPUFFJQkJnZ3Foa2pPUFFNQkJ3
+			TkNBQVNQZCtvNTRjNXNCY3p6M3cvZ0dpcUltbDRSa1RtNkRSU0RJ
+			aGUrCmcrWWd3M1hWTmJIajA0K0c4R2ZsNUJvdVlxdW5ObWxJSWJ4
+			ZVdURDBwY1Bwbm1MTW8wSXdRREFQQmdOVkhSTUIKQWY4RUJUQURB
+			UUgvTUE0R0ExVWREd0VCL3dRRUF3SUJCakFkQmdOVkhRNEVGZ1FV
+			aXkzUWNEL1lQdDBJa0k1OAptc3lKMXIyUDFFZ3dDZ1lJS29aSXpq
+			MEVBd0lEU0FBd1JRSWdUdzZVYnBUM0dFdXFHNGkxdDBPb3drMTB3
+			R2xHCjNlR0RtS2cwdWkvZGFiMENJUUN0UHZScUxickFDR2xYNjk1
+			RjlLeVJCdDZhSUZSZWxSNTNubi9GMW5OcXlnPT0KLS0tLS1FTkQg
+			Q0VSVElGSUNBVEUtLS0tLQobWz85MDAxbBtbPzEwMDRs
+			</data>
+			<key>PayloadDescription</key>
+			<string>Доверенный корневой сертификат VPN Smart Client</string>
+			<key>PayloadDisplayName</key>
+			<string>VPN Smart Client CA</string>
+			<key>PayloadIdentifier</key>
+			<string>com.vpnsmartclient.vpn.cert.9080F946-10DA-4FC3-8988-96751CF1DB20</string>
+			<key>PayloadType</key>
+			<string>com.apple.security.root</string>
+			<key>PayloadUUID</key>
+			<string>9080F946-10DA-4FC3-8988-96751CF1DB20</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>AuthName</key>
+			<string>iphone</string>
+			<key>AuthPassword</key>
+			<string>S8fXb2kQm4pW</string>
+			<key>IKEv2</key>
+			<dict>
+				<key>AuthenticationMethod</key>
+				<string>None</string>
+				<key>ChildSecurityAssociationParameters</key>
+				<dict>
+					<key>DiffieHellmanGroup</key>
+					<integer>14</integer>
+					<key>EncryptionAlgorithm</key>
+					<string>AES-256</string>
+					<key>IntegrityAlgorithm</key>
+					<string>SHA2-256</string>
+					<key>LifeTimeInMinutes</key>
+					<integer>1440</integer>
+				</dict>
+				<key>DeadPeerDetectionRate</key>
+				<string>Medium</string>
+				<key>DisableMOBIKE</key>
+				<false/>
+				<key>DisableRedirect</key>
+				<true/>
+				<key>ExtendedAuthEnabled</key>
+				<true/>
+				<key>IKESecurityAssociationParameters</key>
+				<dict>
+					<key>DiffieHellmanGroup</key>
+					<integer>14</integer>
+					<key>EncryptionAlgorithm</key>
+					<string>AES-256</string>
+					<key>IntegrityAlgorithm</key>
+					<string>SHA2-256</string>
+					<key>LifeTimeInMinutes</key>
+					<integer>1440</integer>
+				</dict>
+				<key>LocalIdentifier</key>
+				<string>iphone</string>
+				<key>NATKeepAliveInterval</key>
+				<integer>20</integer>
+				<key>RemoteAddress</key>
+				<string>69.12.73.250</string>
+				<key>RemoteIdentifier</key>
+				<string>69.12.73.250</string>
+				<key>ServerCertificateCommonName</key>
+				<string>69.12.73.250</string>
+				<key>ServerCertificateIssuerCommonName</key>
+				<string>VPN Smart Client CA</string>
+			</dict>
+			<key>OnDemandEnabled</key>
+			<integer>0</integer>
+			<key>PayloadDescription</key>
+			<string>VPN Smart Client — IKEv2 подключение</string>
+			<key>PayloadDisplayName</key>
+			<string>VPN Smart Client IKEv2</string>
+			<key>PayloadIdentifier</key>
+			<string>com.vpnsmartclient.vpn.B7ECA8E9-E84F-4FB0-9B51-2A341129E725</string>
+			<key>PayloadType</key>
+			<string>com.apple.vpn.managed</string>
+			<key>PayloadUUID</key>
+			<string>B7ECA8E9-E84F-4FB0-9B51-2A341129E725</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>UserDefinedName</key>
+			<string>VPN Smart Client</string>
+			<key>VPNType</key>
+			<string>IKEv2</string>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>Настройка IKEv2 VPN для iPhone</string>
+	<key>PayloadDisplayName</key>
+	<string>VPN Smart Client</string>
+	<key>PayloadIdentifier</key>
+	<string>com.vpnsmartclient.vpn.B2EB7E3A-4B01-4251-977D-BF0960DE74C2</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>B2EB7E3A-4B01-4251-977D-BF0960DE74C2</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
